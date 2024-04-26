@@ -1,0 +1,19 @@
+Ipconfig /all
+Ping 10.10.1.98
+Tracert 10.10.1.18
+Tracert 10.10.1.98
+Show ip interface brief
+Show ip route
+En
+Config t
+interface s0/0/0
+ip address 10.10.1.5 255.255.255.252
+no shutdown
+Ping 10.10.1.98
+Ping 10.10.1.18
+Ipv6config /all
+ping 2001:DB8:1:1::2
+tracert 2001:DB8:1:4::2
+tracert 2001:DB8:1:1::2
+show ipv6 interface brief
+Ping 2001:DB8:1:4::2
